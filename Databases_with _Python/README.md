@@ -7,3 +7,6 @@
     
 ## Next steps:
     1) Implementing the material in a basic baseball database. 
+
+
+[Certificate](https://www.coursera.org/account/accomplishments/certificate/YNL8L2NN2FPY)
