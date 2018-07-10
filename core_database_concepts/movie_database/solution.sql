@@ -13,6 +13,7 @@ CREATE TABLE movies (
 CREATE TABLE taginfo (
     tagid INTEGER NOT NULL,
     content TEXT NOT NULL,
+	PRIMARY KEY (tagid)
 );
 
 CREATE TABLE genres (
