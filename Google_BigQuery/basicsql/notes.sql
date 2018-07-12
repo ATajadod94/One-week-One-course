@@ -19,3 +19,6 @@ SELECT FORMAT("%'d'",totrevenue)
 FROM dataset
 ORDER BY totrevenue DESC
 LIMIT 10
+
+
+SELECT (field1 - field2) as newname
