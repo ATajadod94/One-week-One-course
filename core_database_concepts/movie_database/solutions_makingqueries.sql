@@ -30,6 +30,6 @@ WHERE ratings.movieid == movies.movieid
 GROUP BY movies.title
 
 CREATE TABLE query6 AS
-SELECT   
+SELECT AVG(ratings.rating) as averge
 FROM query4, ratings
-WHERE ratings.movieid == query4.movieid
+WHERE query4.movieid == ratings.movieid
