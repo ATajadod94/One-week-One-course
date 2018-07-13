@@ -7,6 +7,10 @@
     
 ## Next steps:
     1) Implementing the material in a basic baseball database. 
+    2) Core database concepts 
+    3) Google's bigquery
 
+
+[Course Material Reference](https://www.py4e.com/materials)
 
 [Certificate](https://www.coursera.org/account/accomplishments/certificate/YNL8L2NN2FPY)
