@@ -14,3 +14,29 @@
 * Select statements are executed after the filters!! can cause errors
 * no comma after the final select field
 * avoid using * to select column (specially since we are paying per use)
+
+
+### Use the right function for the job
+
+1) String manipulation functions - Format()
+  Concat
+  ENDS_WITH
+  LOWER
+  REGEXP_CONTAINS
+
+2) Aggregation Functions  - SUM()COUNT()AVG()MAX()...
+
+3) Data type conversion functions - cast()
+  A lot of date functions available, including current_data, data_trunc, ...
+
+4) Date functions - Parse_datetime()
+
+There are also statistical , analytical and user-defined functions.
+
+
+* DO NOT FORGET TO USE A GROUP BY IF YOU ARE USING A MIX OR AGGRREGATED AND NON AGGREGATED FIELDS
+
+![Data types in sql]('./sql_datatypes.png')
+
+### NULL
+Null is similar to Matlab (absence of data)
