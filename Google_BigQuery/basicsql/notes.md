@@ -40,3 +40,10 @@ There are also statistical , analytical and user-defined functions.
 
 ### NULL
 Null is similar to Matlab (absence of data)
+
+
+## Final notes
+
+*  You cannot filter aggregated fields in the WHERE clause (use HAVING instead) and additionally you cannot filter on aliased fields within the WHERE clause
+
+* Large GROUP BYs really hurt performance (consider filtering first and / or using aggregation functions)
