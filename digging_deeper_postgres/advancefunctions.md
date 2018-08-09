@@ -11,8 +11,7 @@
 
 SELECT 5 + round(random() * 5)
 
-* use a generate-series function to get x number of random numbers
-
+* use the _built in_ generate-series function to get x number of random numbers
 
 # Writing functions
 * Immutable
