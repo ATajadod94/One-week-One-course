@@ -1,0 +1,1 @@
+* Notes.txt is the best reference available for this course , directly copied from the [instructor](https://github.com/Jess88/PostgreSQL_func_script_inheritance/blob/master/functions_scripts_and_inheritance_cheat_sheet.txt])

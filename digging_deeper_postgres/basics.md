@@ -31,4 +31,4 @@
 * Sets (Inner and outer join)
   * Using "on" vs "where"
 
-* Queries should be at most 15-20 lines 
+* Queries should be at most 15-20 lines

@@ -603,6 +603,7 @@ SQL Function:
 	LANGUAGE SQL
 	IMMUTABLE; -- query won't use DB
 
+
 	CREATE OR REPLACE FUNCTION year_week()
 	RETURNS text AS 'SELECT EXTRACT(YEAR from now()) || ''_'' || EXTRACT(WEEK from now());'
 	LANGUAGE SQL
