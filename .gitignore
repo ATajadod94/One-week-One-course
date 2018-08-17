@@ -2,3 +2,4 @@ Pytest/venv
 opimizing_python/1-root-causes.py
 benchmarking/Untitled.ipynb
 benchmarking/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+*.pyc

@@ -1,0 +1,16 @@
+[
+  "skilift.py::skilift",
+  "test/test_skiiftfixtures.py::test_line_take",
+  "test/test_skiiftfixtures.py::test_lift_one_bench",
+  "test/test_skiiftparameterization.py::test_line_bad[size0-TypeError]",
+  "test/test_skiiftparameterization.py::test_line_bad[None-TypeError]",
+  "test/test_skiiftparameterization.py::test_line_bad[10-TypeError]",
+  "test/test_skiiftparameterization.py::test_line_sizes[0-5-0]",
+  "test/test_skiiftparameterization.py::test_line_sizes[5-2-3]",
+  "test/test_skiiftparameterization.py::test_line_sizes[10-0-10]",
+  "test/test_skilift.py::test_line_take",
+  "test/test_skilift.py::test_lift_one_bench",
+  "test/test_skiliftfixtureandparam.py::test_lift_one_bench",
+  "test/test_skiliftfixtureandparam.py::test_bench6",
+  "test/test_skiliftmonkeypatch.py::test_half_take"
+]
