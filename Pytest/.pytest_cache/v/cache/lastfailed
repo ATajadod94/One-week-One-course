@@ -1,6 +1,0 @@
-{
-  "skilift/test/test/test_skilift.py::test_line_take": true,
-  "skilift/test/test_skiiftfixtures.py": true,
-  "skilift/test/test_skiiftparameterization.py": true,
-  "skilift/test/test_skilift.py": true
-}
