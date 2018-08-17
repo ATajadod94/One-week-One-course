@@ -5,3 +5,6 @@ Using pytest’s advanced features: Fixtures, plugins, and configuration options
 https://www.safaribooksonline.com/live-training/courses/mastering-pythons-pytest/0636920205203/
 
 https://www.dropbox.com/sh/mmkginpoozmas74/AAA0wJg3D7vr-O043UMzXixea?dl=0
+
+Most relevant materials are in 
+One-week-One-course/Pytest/skilift/test/
