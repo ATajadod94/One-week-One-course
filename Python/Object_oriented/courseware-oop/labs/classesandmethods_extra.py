@@ -68,6 +68,21 @@ definition into this lab. Or you can import it, if you prefer.)
 
 # Write your code here:
 
+class Invoice:
+    def __init__(self, number, customer, amount):
+        self.number = number
+        self.customer = customer
+        self.amount = amount
+        self.total_payments = 0
+
+    def add_payment(self, payment):
+        self.total_payments += payment
+
+    def is_fully_paid(self):
+        return self.total_payments >= self.amount
+
+    def amount_due(self):
+        return self.amount - self.total_payments
 
 
 
