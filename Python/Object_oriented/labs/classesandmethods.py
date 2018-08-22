@@ -46,8 +46,21 @@ True
 
 # Write your code here:
 
+class Invoice:
+    def __init__(self, number, name, price):
+        self.number = number
+        self.customer = name
+        self.amount = price
+        self.total_payments = 0
 
+    def add_payment(self, amount):
+        self.total_payments += amount
 
+    def amount_due(self):
+        return self.amount - self.total_payments
+
+    def is_fully_paid(self):
+        return self.total_payments >= self.amount
 # Do not edit any code below this line!
 
 if __name__ == '__main__':
