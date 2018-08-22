@@ -85,7 +85,34 @@ Critters can describe themselves, which we'll use in the user interface:
 
 # Write your code here:
 
+class Critter():
+    def __init__(self, name):
+        self.name = name
+    def is_alive(self):
+        return self.hitpoints > 0
+    def attack(self, other):
+        if self.is_alive() and other.is_alive():
+            temp = other.hitpoints
+            other.hitpoints -= self.damage
+            if other.hitpoints <= 0:
+                other.hitpoints = 0
 
+            return temp - other.hitpoints
+        else:
+            return 0
+    def describe(self):
+        type_name = self.__class__.__name__
+        return "{} the {}".format(self.name, type_name)
+
+class Goblin(Critter):
+    hitpoints = 10
+    damage = 3
+    type_name = "Goblin"
+
+class Orc(Critter):
+    hitpoints = 15
+    damage = 5
+    type_name = "Orc"
 
 # Do not edit any code below this line!
 
