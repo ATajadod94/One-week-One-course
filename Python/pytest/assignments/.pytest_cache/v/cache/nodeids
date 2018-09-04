@@ -1,3 +1,5 @@
 [
-  "test/test_integr.py::test_integer"
+  "test/test_integr.py::test_integer",
+  "test/test_integr2.py::test_bad1",
+  "test/test_integr2.py::test_bad2"
 ]
