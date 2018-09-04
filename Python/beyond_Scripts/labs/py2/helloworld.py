@@ -32,11 +32,7 @@ Pro tips:
 
 # Write your code here:
 
-def hello(who):
-    return "Hello, {}!".format(who)
 
-def print_hello(who):
-    print(hello(who))
 
 # Do not edit any code below this line!
 

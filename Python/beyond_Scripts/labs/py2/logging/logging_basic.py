@@ -12,7 +12,7 @@ following:
 3) Define the pet_log() function.
 
 
-Let's first test the log level threshold.
+Let's first test the log level threshold. 
 >>> logging.debug('debug message')
 >>> logging.info('info message')
 >>> logging.warning('warning message')
@@ -47,6 +47,8 @@ CRITICAL - On Saturday, I'm taking my cat to the lake.
 
 '''
 
+from __future__ import print_function
+
 LOGFILE = 'logging-basic.txt'
 
 def print_log():
@@ -56,19 +58,10 @@ def print_log():
 # This "with" line resets the log file to be empty,
 # each time you run the test:
 with open(LOGFILE, 'w'): pass
-
+    
 # Write your code here:
 
-import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    filename=LOGFILE,
-    format='%(levelname)s - %(message)s',
-    )
-
-def pet_log(info):
-    logging.critical("On %(day)s, I'm taking my %(species)s to %(destination)s.", info)
 
 # Do not edit any code below this line!
 

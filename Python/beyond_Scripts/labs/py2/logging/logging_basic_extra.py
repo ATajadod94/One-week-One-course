@@ -1,53 +1,58 @@
-'''
+'''_
 
 This is the file your logger will log to:
 >>> LOGFILE
-'logging-basic.txt'
+'logging-basic-extra.txt'
 
 To make this lab pass, in the code section, you need to do the
 following:
 
 1) Invoke logging.basicConfig() with the correct arguments.
    (Hint: set level, format and filename.)
-3) Define the pet_log() function.
+2) Define the log_announcements() function.
 
 
-Let's first test the log level threshold.
+Let's first test the log level threshold. 
 >>> logging.debug('debug message')
 >>> logging.info('info message')
 >>> logging.warning('warning message')
 >>> logging.error('error message')
 >>> logging.critical('critical message')
 
-The log file ought to have records only of INFO or greater.  We'll use
+The log file ought to have records only of WARNING or greater.  We'll use
 the print_log() function (defined for you below) to check the log file
 contents:
 
 >>> print_log()
-INFO - info message
-WARNING - warning message
-ERROR - error message
-CRITICAL - critical message
+[WARNING] warning message
+[ERROR] error message
+[CRITICAL] critical message
 
 
-Now define the function pet_log():
+Next, define the log_announcements() function. This one's a bit
+tricky. The argument it takes is a template string:
 
->>> pet_log({ "day": "Tuesday", "species": "dog", "destination": "Central Park"})
->>> pet_log({ "day": "Saturday", "species": "cat", "destination": "the lake" })
+>>> log_announcements("I'm learning %s")
 
-And check that it adds some new records:
+Check that it adds some new records:
 
 >>> print_log()
-INFO - info message
-WARNING - warning message
-ERROR - error message
-CRITICAL - critical message
-CRITICAL - On Tuesday, I'm taking my dog to Central Park.
-CRITICAL - On Saturday, I'm taking my cat to the lake.
+[WARNING] warning message
+[ERROR] error message
+[CRITICAL] critical message
+[CRITICAL] I'm learning Python
+[WARNING] I'm getting good at it!
+[CRITICAL] I'm learning logging
+[WARNING] I'm going to be great at it!
+
+Hint: log_announcements() will invoke logging functions several
+times. Some will use the template string, and some won't.
 
 '''
 
-LOGFILE = 'logging-basic.txt'
+from __future__ import print_function
+
+LOGFILE = 'logging-basic-extra.txt'
 
 def print_log():
     "Prints out what's written to the log file so far."
@@ -56,19 +61,10 @@ def print_log():
 # This "with" line resets the log file to be empty,
 # each time you run the test:
 with open(LOGFILE, 'w'): pass
-
+    
 # Write your code here:
 
-import logging
 
-logging.basicConfig(
-    level=logging.INFO,
-    filename=LOGFILE,
-    format='%(levelname)s - %(message)s',
-    )
-
-def pet_log(info):
-    logging.critical("On %(day)s, I'm taking my %(species)s to %(destination)s.", info)
 
 # Do not edit any code below this line!
 

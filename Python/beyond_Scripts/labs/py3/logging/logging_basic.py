@@ -53,6 +53,7 @@ def print_log():
     "Prints out what's written to the log file so far."
     print(open(LOGFILE).read(), end="")
 
+
 # This "with" line resets the log file to be empty,
 # each time you run the test:
 with open(LOGFILE, 'w'): pass
@@ -71,6 +72,7 @@ def pet_log(info):
     logging.critical("On %(day)s, I'm taking my %(species)s to %(destination)s.", info)
 
 # Do not edit any code below this line!
+
 
 if __name__ == '__main__':
     import doctest
