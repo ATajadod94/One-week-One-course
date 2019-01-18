@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS Tutorials</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id='vue-app'>
+      <h1>{{greet('afternoon')}}</h1>
+      <a v-bind:href="website">the Net Ninja</a>
+      <input type="text" v-bind:value = "name"/>
+      <p v-html='websiteTag'z></p>
+      <p>job : {{job}}</p>
+      <button v-on:click.once="add">Add a year</button>
+      <button v-on:click.once="subtract">Subtract a year</button>
+      <p>my age is {{age}}</p>
+      <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y  }}</div>
+      <a v-on:click.prevent = "click" href="http://www.thenetninja.co.uk"> The Net Ninja </a>
+      <input type="text" v-model ="name" />
+      <span>{{ name }}</span>
+      <input type="text" v-model ="age"/>
+      <span> {{ age }}</span>
+    </div>
+    <script src="app.js"> </script>
+  </body>
+</html>

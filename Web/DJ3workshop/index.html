@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <style>
+    svg {
+      width: 900px;
+      height: 900px;
+    }
+  </style>
+</head>
+
+<body>
+  <svg></svg>
+  <script>
+  	// draw petal
+		var petals = [
+      [
+        'M0,0',
+        'C50,40 50,70 20,100',
+        'L0,85',
+        'L-20,100',
+        'C-50,70 -50,40 0,0'
+      ],
+      [
+        'M50,0',
+        'C0,20 0,40 50,60',
+        'L-10,60',
+        'L-10,-20',
+        'L-10,60',
+        'L-30,60',
+        'C-25,80 100,100 -25,120',
+        'C-36,100 -100,100 -35,60'
+
+      ],
+    ];
+
+
+    d3.select('svg').selectAll('path')
+    	.data(petals).enter().append('path')
+    	.attr('stroke', '#000')
+    	.attr('stroke-width', 2)
+    	.attr('fill', 'none')
+    	.attr('d', function(d) {return d.join(' ')})
+    	.attr('transform', function(d, i) {
+      	var x = (i % 3 + 0.5) * 150;
+      	var y = (Math.floor(i / 3) + 0.5) * 150;
+      	return `translate(${x}, ${y})`;
+      })
+  </script>
+</body>
