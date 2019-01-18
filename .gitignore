@@ -2,4 +2,5 @@ Python/Pytest/venv
 Python/opimizing_python/1-root-causes.py
 Python/benchmarking/
 Python/benchmarking/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+Javascript/Node-twitter/node_modules/
 *.pyc
